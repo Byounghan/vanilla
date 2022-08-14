@@ -25,10 +25,8 @@ const quote = document.querySelector("#quote span:first-child");
 const author = document.querySelector("#quote span:last-child");
 
 const todaysQuote = quotes[Math.floor(Math.random()*quotes.length)];
-console.dir(quote);
-// quote.innerHTML=`<p>${todaysQuote.quote}<br><strong>${todaysQuote.author}</strong></p>`;
-// quote.innerText = todaysQuote.quote;
-// author.innerText = todaysQuote.author;
+quote.innerText = todaysQuote.quote;
+author.innerText = todaysQuote.author;
 
 const test = document.querySelector("#quote");
 console.dir(test);
